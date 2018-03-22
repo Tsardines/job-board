@@ -7,7 +7,8 @@ CREATE TABLE users (
   username VARCHAR(255),
   password VARCHAR(255),
   favorites VARCHAR(255),
-  email VARCHAR(255)
+  email VARCHAR(255),
+  repeat_user boolean
 );
 
 CREATE TABLE jobs (
