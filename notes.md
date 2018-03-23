@@ -55,7 +55,7 @@ A thorough README.md file that contains the following:
 
 ## Project Description
 
-I've decided to create a job board that's built and designed for the programmer.
+I've decided to create a job board that's built and designed for the programmer. If there's programming involved, then it'll show up.
 
 This website will use APIs to generate listings from other sites. For a list of the APIs used, please scroll down.
 
@@ -86,7 +86,7 @@ Secondly, the index of this site features an infinitely scrollable page. A probl
 - Remembering if a user has visited the site before
 - Repeating your password on registration
 
-**3. Not important but urgent:**
+**3. Not important but urgent (how can something be not important but urgent?):**
 - The profile, registration, and login pages
   - Auth & auth
 - Other filtering options
@@ -94,8 +94,7 @@ Secondly, the index of this site features an infinitely scrollable page. A probl
 
 **4. Not important and not urgent:**
 - Footer content
-  - Links to my GitHub, Linkedin, etc.
-
+  - Links to my GitHub, Linkedin, Instagram, etc.
 
 
 
@@ -106,8 +105,8 @@ A user will be able to:
   - Favorite jobs
   - Travel to original source of job listing
 
-
 ### POST MVP
+- Ability to sort results in ascending/descending order
 - Fine-tuning the CSS
 - Ability to post jobs
 - Register with Google account
@@ -119,22 +118,36 @@ A user will be able to:
 
 **Table 1: users**
 CREATE TABLE users (
+
   id BIGSERIAL PRIMARY KEY,
+
   username VARCHAR(255),
+
   password VARCHAR(255),
+
   favorites VARCHAR(255),
+
   email VARCHAR(255),
+
   repeat_user boolean
+
 );
 
 **Table 2: jobs**
 CREATE TABLE jobs (
+
   id BIGSERIAL PRIMARY KEY,
+
   languages VARCHAR(255) NOT NULL,
+
   frameworks VARCHAR(255) NOT NULL,
+
   full_part_int VARCHAR(255) NOT NULL,
+
   company_type VARCHAR(255) NOT NULL,
+
   experience_level VARCHAR(255) NOT NULL,
+
   favorited boolean
 );
 
