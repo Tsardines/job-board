@@ -11,12 +11,18 @@ CREATE TABLE users (
   repeat_user boolean
 );
 
-CREATE TABLE jobs (
+DROP TABLE jobs;
+
+CREATE TABLE git_jobs (
   id BIGSERIAL PRIMARY KEY,
-  languages VARCHAR(255) NOT NULL,
-  frameworks VARCHAR(255) NOT NULL,
-  full_part_int VARCHAR(255) NOT NULL,
-  company_type VARCHAR(255) NOT NULL,
-  experience_level VARCHAR(255) NOT NULL,
-  favorited boolean
+  created_at VARCHAR(255) NOT NULL,
+  title VARCHAR(255) NOT NULL,
+  type VARCHAR(255) NOT NULL,
+  company VARCHAR(255) NOT NULL,
+  company_url VARCHAR(255) NOT NULL,
+  url VARCHAR(255) NOT NULL
 );
+
+  -- languages VARCHAR(255) NOT NULL,
+  -- frameworks VARCHAR(255) NOT NULL,
+  -- favorited boolean

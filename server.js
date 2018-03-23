@@ -3,13 +3,14 @@ const app = express();
 const PORT = 3000;
 const bodyParser = require('body-parser');
 const Task = require('./models/jobs-model');
-// const methodOverride = require('method-override');
+const methodOverride = require('method-override');
+const bcrypt = require('bcrypt');
 
-// app.use(bodyParser.json())
+app.use(bodyParser.json())
 
-// app.use(methodOverride('_method'));
+app.use(methodOverride('_method'));
 
-// const urlencodedParser = bodyParser.urlencoded({ extended: false })
+const urlencodedParser = bodyParser.urlencoded({ extended: false })
 
 app.set("view engine", "ejs");
 
@@ -17,7 +18,7 @@ app.set("view engine", "ejs");
 
 
 
-// SHOW ALL JOBS on INDEX
+// SHOW ALL JOBS on INDEX PAGE
 app.get('/', (request, response) => {
   Job.findAllJobs().then(everyJob => {
     response.json('index');
@@ -26,6 +27,8 @@ app.get('/', (request, response) => {
 });
 
 
+// bcrypt
+const salt = '$2a$10$J4uWXuOowq9xunVbvBIPMe'
 
 
 app.listen(PORT, () => {

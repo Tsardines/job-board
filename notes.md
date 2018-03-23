@@ -18,38 +18,40 @@ A thorough README.md file that contains the following:
 
 
 
+
+
 # Table of Contents:
 
-### Project Description
-### Priority Matrix
+### 1. Project Description
+### 2. Priority Matrix
 #### - MVP
 #### - Post-MVP
-### Wireframes
-### Database and Tables
-### Technologies
+### 3. Wireframes
+### 4. Database and Tables
+### 5. Technologies
 #### - APIs
 #### - Modules
-### Pages
+### 6. Pages
 #### - Landing Page
 #### - Login & Register
 #### - Profile
-### Functionality: Index
+### 7. Functionality: Index
 #### - Job Listings
 #### - Filters
 #### - Favoriting Jobs
 #### - Functionality: Login
 #### - Username
 #### - Password
-### Functionality: Registration
+### 8. Functionality: Registration
 #### - Username
 #### - Password and Password Repeat
 #### - repeat_user
-### Functionality: Profile
+### 9. Functionality: Profile
 #### - Bio
 #### - Avatar
 #### - Favorited Posts
-### Change Log
-### Issues and Resolutions
+### 10. Change Log
+### 11. Issues and Resolutions
 
 
 
@@ -113,6 +115,7 @@ A user will be able to:
 - Fine-tuning the CSS
 - Ability to post jobs
 - Register with Google account
+- User will update account (PUT)
 
 ## Wireframes
 
@@ -157,6 +160,9 @@ A user will be able to:
 
     );
 
+    INSERT INTO jobs (languages, frameworks, full_part_int, company_type, experience_level, favorited)
+    VALUES (javascript, angular, fulltime, startup, entry, true);
+
 
 
 ## Technologies
@@ -166,6 +172,7 @@ A user will be able to:
 - nodemon
 - debug
 - Body Parser
+- Method Override
 
 
 ### APIs
@@ -175,7 +182,6 @@ A user will be able to:
 
 
 ### Modules
-For now, these are the modules that are being used:
 
 
 
@@ -194,9 +200,14 @@ Register:
 ### Profile
   - Links to: index
 
+
+
 ## Functionality: Index
+- GET
+  - '/'
 
 ### Job Listings  
+
 
 ### Filters
 
@@ -205,6 +216,8 @@ Register:
 
 
 ## Functionality: Login
+- GET
+  '/login'
 
 ### Username
 
@@ -213,6 +226,8 @@ Register:
 
 
 ## Functionality: Registration
+- GET
+  '/register'
 
 ### Username
 
@@ -223,12 +238,15 @@ Register:
 
 
 ## Functionality: Profile
+- GET
+  - '/profile'
 
 ### Bio
 
 ### Avatar
 
 ### Favorited Posts
+- GET from index
 
 
 
