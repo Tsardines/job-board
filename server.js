@@ -2,9 +2,13 @@ const express = require('express');
 const app = express();
 const PORT = 3000;
 const bodyParser = require('body-parser');
-const Task = require('./models/jobs-model');
 const methodOverride = require('method-override');
 const bcrypt = require('bcrypt');
+const Job = require('./models/jobs_model');
+const User = require('./models/users_model');
+
+app.use('/styles', express.static('styles'));
+// app.use('/images', express.static('images'));
 
 app.use(bodyParser.json())
 
@@ -28,7 +32,11 @@ app.get('/', (request, response) => {
 
 
 // bcrypt
-const salt = '$2a$10$J4uWXuOowq9xunVbvBIPMe'
+// const salt = '$2a$10$J4uWXuOowq9xunVbvBIPMe'
+
+
+
+
 
 
 app.listen(PORT, () => {

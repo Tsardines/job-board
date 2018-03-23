@@ -15,7 +15,8 @@ A thorough README.md file that contains the following:
 
     Instructions for downloading the code and running it on localhost
 
-
+- get list from github pages url
+- add a job post
 
 
 
@@ -124,6 +125,8 @@ A user will be able to:
 
 **Table 1: users**
 
+``` sql
+
     CREATE TABLE users (
 
     id BIGSERIAL PRIMARY KEY,
@@ -140,7 +143,10 @@ A user will be able to:
 
     );
 
+```    
+
 **Table 2: jobs**
+``` sql
 
     CREATE TABLE jobs (
 
@@ -163,7 +169,7 @@ A user will be able to:
     INSERT INTO jobs (languages, frameworks, full_part_int, company_type, experience_level, favorited)
     VALUES (javascript, angular, fulltime, startup, entry, true);
 
-
+```
 
 ## Technologies
 - Express
@@ -247,6 +253,7 @@ Register:
 
 ### Favorited Posts
 - GET from index
+- DELETE (remove) favorites
 
 
 
