@@ -117,38 +117,40 @@ A user will be able to:
 **Database name: job_board**
 
 **Table 1: users**
+
 CREATE TABLE users (
 
-  id BIGSERIAL PRIMARY KEY,
+    id BIGSERIAL PRIMARY KEY,
 
-  username VARCHAR(255),
+    username VARCHAR(255),
 
-  password VARCHAR(255),
+    password VARCHAR(255),
 
-  favorites VARCHAR(255),
+    favorites VARCHAR(255),
 
-  email VARCHAR(255),
+    email VARCHAR(255),
 
-  repeat_user boolean
+    repeat_user boolean
 
 );
 
 **Table 2: jobs**
+
 CREATE TABLE jobs (
 
-  id BIGSERIAL PRIMARY KEY,
+    id BIGSERIAL PRIMARY KEY,
 
-  languages VARCHAR(255) NOT NULL,
+    languages VARCHAR(255) NOT NULL,
 
-  frameworks VARCHAR(255) NOT NULL,
+    frameworks VARCHAR(255) NOT NULL,
 
-  full_part_int VARCHAR(255) NOT NULL,
+    full_part_int VARCHAR(255) NOT NULL,
 
-  company_type VARCHAR(255) NOT NULL,
+    company_type VARCHAR(255) NOT NULL,
 
-  experience_level VARCHAR(255) NOT NULL,
+    experience_level VARCHAR(255) NOT NULL,
 
-  favorited boolean
+    favorited boolean
 );
 
 
@@ -176,11 +178,17 @@ For now, these are the modules that are being used:
 ## Pages
 
 ### Landing Page
+- Links to: login, register, profile
 
 ### Login & Register
+Login:
+  - Links to: index
+
+Register:
+  - Links to: index
 
 ### Profile
-
+  - Links to: index
 
 ## Functionality: Index
 
