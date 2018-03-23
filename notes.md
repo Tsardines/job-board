@@ -48,7 +48,8 @@ A thorough README.md file that contains the following:
 #### - Bio
 #### - Avatar
 #### - Favorited Posts
-### - Issues and Resolutions
+### Change Log
+### Issues and Resolutions
 
 
 
@@ -73,6 +74,7 @@ Secondly, the index of this site features an infinitely scrollable page. A probl
 - The ability to favorite a listing
 - href-ing to the original websites
 - The index page, in general
+  - HTML
 - The filtering menus
   - Languages, frameworks, and type (full, part, internship, contract)
 
@@ -85,6 +87,7 @@ Secondly, the index of this site features an infinitely scrollable page. A probl
 - The login page has a button that redirects to the registration page
 - Remembering if a user has visited the site before
 - Repeating your password on registration
+- HTML for all pages except index
 
 **3. Not important but urgent (how can something be not important but urgent?):**
 - The profile, registration, and login pages
@@ -94,7 +97,7 @@ Secondly, the index of this site features an infinitely scrollable page. A probl
 
 **4. Not important and not urgent:**
 - Footer content
-  - Links to my GitHub, Linkedin, Instagram, etc.
+  - Linked icons to my GitHub, Linkedin, Instagram, etc.
 
 
 
@@ -118,7 +121,7 @@ A user will be able to:
 
 **Table 1: users**
 
-CREATE TABLE users (
+    CREATE TABLE users (
 
     id BIGSERIAL PRIMARY KEY,
 
@@ -132,11 +135,11 @@ CREATE TABLE users (
 
     repeat_user boolean
 
-);
+    );
 
 **Table 2: jobs**
 
-CREATE TABLE jobs (
+    CREATE TABLE jobs (
 
     id BIGSERIAL PRIMARY KEY,
 
@@ -151,7 +154,8 @@ CREATE TABLE jobs (
     experience_level VARCHAR(255) NOT NULL,
 
     favorited boolean
-);
+
+    );
 
 
 
@@ -192,7 +196,7 @@ Register:
 
 ## Functionality: Index
 
-### Job Listings
+### Job Listings  
 
 ### Filters
 
@@ -232,17 +236,9 @@ Register:
 Priority Matrix: 1. Important & urgent  |  2. Important but not urgent  |  3. Not important but urgent  |  4. Not important and not urgent
 
 | **Component | Priority | Estimated Time | Time Invested | Actual Time** |
-| :---: | :---: |  :---: | :---: | :---: |
-| **Object.is()** | 1 | 2H | :---: | :---: |
+| :---: | :---: | :---: | :---: | :---: |
+| :---: | :---: | :---: | :---: | :---: |
 
-
-
-## Additional Libraries
-/// Use this section to list all supporting libraries and their role in the project.
-
-
-## jQuery Discoveries
-/// Use this section to list some, but not all, of the jQuery methods and\or functionality discovered while working on this project.
 
 ## Change Log
 /// Use this section to document what changes were made and the reasoning behind those changes.  
