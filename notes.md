@@ -22,33 +22,33 @@ A thorough README.md file that contains the following:
 
 ### Project Description
 ### Priority Matrix
-#### MVP
-#### Post-MVP
+#### - MVP
+#### - Post-MVP
 ### Wireframes
 ### Database and Tables
 ### Technologies
-#### APIs
-#### Modules
+#### - APIs
+#### - Modules
 ### Pages
-#### Landing Page
-#### Login & Register
-#### Profile
+#### - Landing Page
+#### - Login & Register
+#### - Profile
 ### Functionality: Index
-#### Job Listings
-#### Filters
-#### Favoriting Jobs
-#### Functionality: Login
-#### Username
-#### Password
+#### - Job Listings
+#### - Filters
+#### - Favoriting Jobs
+#### - Functionality: Login
+#### - Username
+#### - Password
 ### Functionality: Registration
-#### Username
-#### Password and Password Repeat
-#### repeat_user
+#### - Username
+#### - Password and Password Repeat
+#### - repeat_user
 ### Functionality: Profile
-#### Bio
-#### Avatar
-#### Favorited Posts
-### Issues and Resolutions
+#### - Bio
+#### - Avatar
+#### - Favorited Posts
+### - Issues and Resolutions
 
 
 
