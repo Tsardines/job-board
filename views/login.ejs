@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link rel="stylesheet" href="style.css" type="text/css"> -->
+
+</head>
+
+<body>
+
+<form class="form-horizontal" action="/login" method="post">
+  <fieldset>
+
+  <!-- Form Name -->
+  <legend>Login</legend>
+
+  <!-- Text input-->
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="username">Username</label>
+    <div class="col-md-4">
+    <input id="username" name="username" type="text" placeholder="please enter username" class="form-control input-md">
+
+    </div>
+  </div>
+
+  <!-- Text input-->
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="password">Password</label>
+    <div class="col-md-4">
+    <input id="password" name="password" type="text" placeholder="enter your password" class="form-control input-md">
+
+    </div>
+  </div>
+
+  <!-- Button -->
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="submit"></label>
+    <div class="col-md-4">
+      <button id="submit" name="submit" class="btn btn-success">Submit</button>
+    </div>
+  </div>
+
+  <!-- Go Back Button -->
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="go-back"></label>
+    <div class="col-md-4">
+      <button id="go-back" name="go-back" class="btn btn-success">
+  <a href="/todos">Home</a></br></br></button>
+    </div>
+  </div>
+
+  </fieldset>
+</form>
+
+
+</body>
+
+
+</html>

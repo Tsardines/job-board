@@ -5,4 +5,8 @@ const pgp = require('pg-promise')({});
 const connectionURL = "postgres://localhost:5432/job_board";
 
 // new database connection
-const connection = pgp(connectionURL);
+const db = pgp(connectionURL);
+
+
+
+module.exports = db;

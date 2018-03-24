@@ -131,15 +131,13 @@ A user will be able to:
 
     id BIGSERIAL PRIMARY KEY,
 
-    username VARCHAR(255),
+    username VARCHAR(255) UNIQUE,
 
     password VARCHAR(255),
 
     favorites VARCHAR(255),
 
-    email VARCHAR(255),
-
-    repeat_user boolean
+    email VARCHAR(255) UNIQUE,
 
     );
 
@@ -152,22 +150,29 @@ A user will be able to:
 
     id BIGSERIAL PRIMARY KEY,
 
+    created_at date NOT NULL,
+
+    title VARCHAR(255) NOT NULL,
+
+    type VARCHAR(255) NOT NULL,
+
+    company VARCHAR(255) NOT NULL,
+
+    company_url VARCHAR(255) NOT NULL,
+
+    url VARCHAR(255) NOT NULL,
+
     languages VARCHAR(255) NOT NULL,
 
     frameworks VARCHAR(255) NOT NULL,
 
-    full_part_int VARCHAR(255) NOT NULL,
+    lat INTEGER,
 
-    company_type VARCHAR(255) NOT NULL,
+    lng INTEGER,
 
-    experience_level VARCHAR(255) NOT NULL,
-
-    favorited boolean
+    experience_level VARCHAR(255) NOT NULL
 
     );
-
-    INSERT INTO jobs (languages, frameworks, full_part_int, company_type, experience_level, favorited)
-    VALUES (javascript, angular, fulltime, startup, entry, true);
 
 ```
 
